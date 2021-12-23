@@ -12,7 +12,6 @@ export class AppService {
   private webSocketConnector: WebSocketConnector | any;
 
   connect(id:string){
-    console.warn("Entrei na Connect")
     this.webSocketConnector = new WebSocketConnector(
       'http://localhost:4200',
       '/'+ id,
